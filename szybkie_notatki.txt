@@ -1,0 +1,53 @@
+
+ZACZYNAMY O 18;00 - 19;30
+
+-----------------------------------------------------------------------------
+zajecia 1 - 2025.02.27
+-----------------------------------------------------------------------------
+
+nodejs conajmniej 24.x.x
+ide np visual studio 
+przegladarka 
+github wtyczka do VSCpde , gh desktop lub git
+
+jakies linki:
+
+https://classroom.github.com/a/viqkSa6f
+
+https://classroom.github.com/assignment-invitations/5da65bcc2a2f6ca81ef95aaa2a70e375/status
+
+https://github.com/IS-UMK/lab-Kacper-Sz
+
+
+
+
+-----------------------------------------------------------------------------
+zajecia 2025.03.06
+-----------------------------------------------------------------------------
+
+Aplikacje PWA
+
+let's encrypt strona w internecie moze dostarczyc certyfikat
+
+wynik w lighthouse ponizej 75% z czegokoliwek dyskwalifikuje strone na bycie PWA
+
+od gory robic najleoiej 45px odstepu od gornej granicy zeby notch albo dynamic isnalnd nie zakrywal strony
+
+aplikacja pwa domyslnie dziala offline -> dodanie do strony pewnego cache ktore cos wyrzuca
+
+
+PLIK MANIFEST JONSON :
+"display": "standalone" //fullscreen-odgornej do dolnej krawedzi ekranu, standalone-opcja natywnej apk z wylaczenienm wszystkich dodatkow, minimal-ui - tylko i wylacznie niezbedne elementy na ekranie -> statusy i jak uzytkownik ma wymuszone przyciski to one sie pokazuja, browser- po posrtu apk w przegladarce wyglada jak skrot na pulpicie do przegladarki co o twiera konkretna storna
+
+
+Stronaw pierwszej kolenjosci uruchamia serviceworkera ktory kontaktuje sie z chmura pobiera dane jak uda mu sie je pobrac to pcha dane do cache i z cache ejst pchane do apk
+jak SW wysyla zapytanie do chmury i nie dostanie odp to idzie od razu do cache i to co ma w cach eladuje na strone z bomby
+
+pwa builder i pwa vite jedne z lepszych do budowania (apk pwa?) teraz pierwszy i ostatni raz pisalismy samemu "z palca" serviceworkera
+
+
+
+
+
+
+
