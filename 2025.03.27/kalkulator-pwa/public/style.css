@@ -1,0 +1,34 @@
+
+* {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.key {
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    height: 25px;
+    aspect-ratio: 1/1;
+}
+.key:hover {
+    background-color: azure;
+    cursor: pointer;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px); ;
+    gap: 5px;    
+}
+
+
+
+
+
+
+

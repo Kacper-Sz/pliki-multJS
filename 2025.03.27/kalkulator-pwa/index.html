@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>kalkulator-pwa</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport"
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <meta name="description" content="This is a kalkulator-pwa app" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="kalkulator-pwa" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- This tag is used by the kalkulator-pwa CLI to identify template projects. Don't remove if you are using the CLI. -->
+  <meta name="pwa-starter-template-identity" content="pwa-starter"/>
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="icon" href="/assets/icons/icon_24.png" type="image/png" />
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="manifest.json" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <h1>hello</h1>
+  <div class="main">
+    <div class="calc">
+      <div class="screen"></div>
+        <div class="keyboard">
+          <div class="key">1</div>
+          <div class="key">2</div>
+          <div class="key">3</div>
+          <div class="key">4</div>
+          <div class="key">5</div>
+          <div class="key">6</div>
+          <div class="key">7</div>
+          <div class="key">8</div>
+          <div class="key">9</div>
+          <div class="key">0</div>
+          <div class="key">.</div>
+          <div class="key">+</div>
+          <div class="key">-</div>
+          <div class="key">*</div>
+          <div class="key">/</div>
+          <div class="key">=</div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.onload = () => {
+        navigator.serviceWorker.register(
+          '/sw.js'
+        );
+      }
+    }
+  </script>
+</body>
+
+</html>

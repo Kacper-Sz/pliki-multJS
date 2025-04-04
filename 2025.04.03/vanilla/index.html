@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/style.css" />
+
+    <script src="/src/components/taskItem.js" defer></script>
+    <script src="/src/scripts/script.js" defer></script>
+
+  </head>
+  <body>
+    <div class="w-screen h-screen flex flex-col justify-center items-center">
+      <div id="app" class="min-w-[320px] max-w-[1200px] w-[75%] grow-1 flex flex-col">
+        <div id="app_header" class="w-full text-center text-2xl">
+          <h1>to do app</h1>
+        </div>
+        <div id="app_content" class="flex grow-1 flex-col gap-4">
+         
+          <task-item></task-item>
+
+        </div>
+        <div id="app_controls" class="flex gap-2">
+          <input type="text" id="newTaskContent" placeholder="podaj co masz do zrobienia"  class="border-1 border-zinc-200 grow-1"/>
+          <button type="button" id="addNewTaskButton" class="border-2 rounded-md bg-green-500 text-white p-2">dodaj</button>
+        </div>
+      </div>
+
+    </div>
+
+
+    
+
+
+    <template id="taskTemplate">
+      <style>
+        @import "tailwindcss";
+      </style>
+      <div class="taskItem flex flex-row gap-2 border-2 border-black rounded-md justify-center items-center p-2">
+        <div class="taskItemText flex flex-col grow-1">
+          <div class="taskItemContent">Zadanie 1</div>
+          <div class="taskItemDescription">Opis zadania 1</div>
+        </div>
+        <div class="taskItemStatus">pending</div>
+        <div class="taskItemChangeStatus">
+          <button type="button">V</button>
+        </div>
+      </div>
+    </template>
+
+  </body>
+</html>
