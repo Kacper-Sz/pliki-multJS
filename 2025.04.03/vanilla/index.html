@@ -7,7 +7,7 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="/src/style.css" />
 
-    <script src="/src/components/taskItem.js" defer></script>
+    <script src="/src/Components/taskItem.js" defer></script>
     <script src="/src/scripts/script.js" defer></script>
 
   </head>
@@ -18,8 +18,6 @@
           <h1>to do app</h1>
         </div>
         <div id="app_content" class="flex grow-1 flex-col gap-4">
-         
-          <task-item></task-item>
 
         </div>
         <div id="app_controls" class="flex gap-2">
@@ -45,7 +43,8 @@
         </div>
         <div class="taskItemStatus">pending</div>
         <div class="taskItemChangeStatus">
-          <button type="button">V</button>
+          <button type="button" class="border-2 border-black p2 cursor-pointer change_status_btn">ChangeStatus</button>
+          <button type="button" class="border-2 border-black p2 cursor-pointer remove_task_btn">RemoveTassk</button>
         </div>
       </div>
     </template>
